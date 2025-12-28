@@ -3,7 +3,7 @@
 (Image source: https://www.pnas.org/content/111/15/E1454)
 
 ## Project Summary
-In this project, we developed a classification engine for facial emotion recognition. Our primary goal was to conduct a rigorous model evaluation and selection process, balancing model complexity against computational efficiency. By analyzing **78 specific fiducial points** on facial images, we extracted geometric features to distinguish between various emotional states.
+In this project, we developed a classification engine for facial emotion recognition. Our primary goal was to conduct a rigorous model evaluation and selection process, balancing model complexity against computational efficiency. By analyzing **78 specific fiducial points** on **3000 facial images**, we extracted geometric features to distinguish between various emotional states.
 
 
 
@@ -18,7 +18,7 @@ We analyzed the distributions of vertical distances between key facial landmarks
 
 ### Models Evaluated
 To find the optimal balance of complexity and efficiency, we benchmarked the following strategies:
-* **Baseline Model:** Initial predictive benchmark for performance comparison.
+* **Baseline Model - Gradient Boosting Machine:** Initial predictive benchmark Gradient Boosting Machine for performance comparison.
 * **XGBoost & XGBoost + SMOTE:** Gradient boosting with oversampling to handle class imbalance.
 * **PCA + Linear Discriminant Analysis (LDA):** Dimensionality reduction combined with linear classification.
 * **Random Forest:** Ensemble-based decision trees.
@@ -61,6 +61,7 @@ Weiwei Song, Changhao He, Aurore Gosmant, Zi Fang, Jimmy Smiley
 
 
 ---
+
 
 
 
