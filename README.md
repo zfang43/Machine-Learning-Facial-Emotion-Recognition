@@ -30,13 +30,14 @@ As data scientists, our decisions were supported by sound evidence through model
 
 
 
-### Team members:
-* Weiwei Song
-* Changhao He
-* Aurore Gosmant
-* Zi Fang
-* Jimmy Smiley
+#### Team members:
+Weiwei Song
+Changhao He
+Aurore Gosmant
+Zi Fang
+Jimmy Smiley
 
 
 ---
+
 
