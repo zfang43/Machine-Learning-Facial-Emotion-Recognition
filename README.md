@@ -28,13 +28,40 @@ To find the optimal balance of complexity and efficiency, we benchmarked the fol
 ## Evaluation & Decision Making
 As data scientists, our decisions were supported by sound evidence through model assessment, validation, and cross-comparison. We focused on reproducibility and the clear communication of evidence to justify our final model selection, walking the fine line between model complexity and computational cost.
 
+## 1. Model Evaluation & Final Selection
 
+After benchmarking multiple strategies, **XGBoost + SMOTE** was selected as our final model. The decision was driven by its ability to balance high predictive power with the computational efficiency required for real-time applications.
+
+### 2. Predictive Performance
+The model was evaluated on unseen test images, achieving strong results in both accuracy and class separability:
+* **Accuracy:** 71.44%
+* **AUC (Area Under Curve):** 0.8111
+
+
+
+### 3. Computational Efficiency (Running Time)
+A critical requirement for this project was minimizing **testing latency** without compromising prediction quality. While the training phase is computationally intensive, the resulting model is highly optimized for deployment.
+
+| Phase | Task | Duration (Seconds) |
+| :--- | :--- | :--- |
+| **Preparation** | Feature Construction (Training) | 0.48s |
+| **Preparation** | Feature Construction (Testing) | 0.13s |
+| **Optimization** | Model Training (XGBoost + SMOTE) | 232.83s |
+| **Execution** | **Model Prediction (Testing)** | **0.37s** |
+
+
+
+## Conclusion of Evidence
+While the **XGBoost + SMOTE** model achieved a similar accuracy to our baseline, it was chosen for two decisive reasons:
+1. **Higher AUC:** A result of 0.8111 indicates significantly better performance in distinguishing between emotion classes compared to the baseline.
+2. **Superior Speed:** The testing/prediction time is drastically lower (0.37s), making this engine efficient even when computational resources are limited.
 
 #### Team members:
 Weiwei Song, Changhao He, Aurore Gosmant, Zi Fang, Jimmy Smiley
 
 
 ---
+
 
 
 
